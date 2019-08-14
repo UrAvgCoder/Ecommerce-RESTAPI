@@ -43,6 +43,7 @@ POST api/products
 ### Update article
 ``` bash
 PUT api/products/{product}
+```
 
 ## App Info
 
