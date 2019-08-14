@@ -22,13 +22,10 @@ php artisan key:generate
 ## Endpoints
 
 ### List all articles with links and meta
-``` bash
 GET api/products
-```
+
 ### Get single article
-``` bash
 GET api/products/{product}
-```
 
 ### Delete article
 ``` bash
