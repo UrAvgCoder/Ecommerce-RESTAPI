@@ -71,7 +71,14 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        // return $product;
+        $request['detail'] = $request->description;
+        unset($request['description']);
+        // return $request;
+        $product->update($request->all());
+        return response([
+            'data' => new ProductResource($product)
+        ], SymfonyResponse::HTTP_CREATED);
     }
 
     /**
@@ -82,6 +89,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        return response(null, SymfonyResponse::HTTP_NO_CONTENT);
     }
 }
