@@ -19,27 +19,27 @@ php artisan db:seed
 php artisan key:generate
 
 ```
-### List all articles with links and meta
+### List all products with links and meta
 ``` bash
 GET api/products
 ```
 
-### Get single article
+### Get single products
 ``` bash
 GET api/products/{product}
 ```
 
-### Delete article
+### Delete products
 ``` bash
 DELETE api/products/{product}
 ```
 
-### Add article
+### Add products
 ``` bash
 POST api/products
 ```
 
-### Update article
+### Update products
 ``` bash
 PUT api/products/{product}
 ```
