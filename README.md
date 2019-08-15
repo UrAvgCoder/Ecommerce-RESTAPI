@@ -24,7 +24,7 @@ php artisan key:generate
 GET api/products
 ```
 
-### Get single products
+### Get single product
 ``` bash
 GET api/products/{product}
 ```
